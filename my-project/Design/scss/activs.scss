@@ -1,0 +1,116 @@
+.activ-title {
+    margin-top: 50px;
+
+    font-family: Open Sans;
+    font-size: 20px;
+    font-weight: bold;
+
+    text-align: center;
+}
+
+.activs {
+    width: 70%;
+    margin: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    margin-top: 0px;
+}
+.activ {
+    width: 40%;
+    padding: 30px;
+    margin: 40px 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    border-radius: 10px;
+    box-shadow: 3px 5px 13px 3px rgba(0, 0, 0, 0.25);
+    background-color: #FBFBFB;
+
+    &__info {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        margin: 15px 0;
+
+
+        &_list {
+        }
+
+        &_lis-title {
+            margin-bottom: 10px;
+
+            font-family: Open Sans;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        &_lis-text {
+            font-family: Open Sans;
+            font-size: 14px;
+            font-weight: normal;
+        }
+    }
+
+    &__info-img {
+        width: 15%;
+        margin-right: 20px;
+    }
+
+    &__buttons {
+        width: 90%;
+        margin-top: 40px;
+    }
+
+    &__btn-del {
+        width: 150px;
+        height: 40px;
+
+        margin-right: 3%;
+
+        background-color: unset;
+        border: 1px solid #000;
+        border-radius: 1000px;
+
+        font-family: Open Sans;
+        font-size: 14px;
+        font-weight: normal;
+
+        transition: all 0.5s ease;
+    }
+
+    &__btn-del:hover {
+        background-color: #000;
+        border-radius: 1000px;
+        border: unset;
+        color: #fff;
+    }
+
+    &__btn-end {
+        width: 150px;
+        height: 40px;
+
+        margin-right: 3%;
+
+        background-color: #000;
+        border-radius: 1000px;
+        border: unset;
+
+        font-family: Open Sans;
+        font-size: 14px;
+        font-weight: normal;
+        color: #fff;
+
+        transition: all 0.5s ease;
+    }
+
+    &__btn-end:hover {
+        background-color: #ffff;
+        border: 1px solid #000;
+        color: #000;
+    }
+}

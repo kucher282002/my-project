@@ -1,0 +1,115 @@
+@media only screen and (max-width : 1280px) {
+    .footer {
+        margin: auto;
+        width: 80%;
+        height: 100%;
+
+        &__desc {
+            display: none;
+        }
+    
+        &__section-title {
+            font-family: Ubuntu;
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    
+        &__navigation {
+            width: 100%;
+        }
+    
+        &__socual {
+            display: flex;
+            justify-content: space-between;
+            width: 15%;
+        }
+    
+        &__icon {
+            display: inline;
+        }
+    }
+    
+    .navigation__list {
+        height: auto;
+        list-style-position: inside;
+        column-count: 2;
+    }
+}
+
+@media only screen and (max-width : 780px) {
+    .footer {
+        margin: auto;
+        width: 90%;
+        height: 100%;
+
+        align-items: flex-start;
+    
+        &__section-title {
+            font-family: Ubuntu;
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+    
+        &__socual {
+            display: flex;
+            justify-content: space-between;
+            width: 20%;
+        }
+    
+        &__icon {
+            display: inline;
+        }
+    }
+    
+    .navigation__list {
+        height: 20%;
+        list-style-position: inside;
+        column-count: unset;
+    }
+}
+
+@media only screen and (max-width : 700px) {
+    .footer {
+        margin: auto;
+        width: 90%;
+        height: 100%;
+
+        align-items: flex-start;
+        flex-wrap: wrap;
+        
+    
+        &__section-title {
+            font-family: Ubuntu;
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        &__contacts {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    
+        &__socual {
+            display: none;
+
+            display: flex;
+            justify-content: space-between;
+            width: 50%;
+        }
+    
+        &__icon {
+            display: none;
+        }
+    }
+    
+    .navigation__list {
+        margin-bottom: 30px;
+
+        height: 20%;
+        list-style-position: inside;
+        column-count: 2;
+    }
+}

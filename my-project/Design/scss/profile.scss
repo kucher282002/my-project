@@ -1,0 +1,89 @@
+.porfile {
+    width: 65%;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 100px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile {
+
+	&__name {
+        margin-bottom: 40px;
+
+        font-family: Open Sans;
+        font-size: 20px;
+        font-weight: bold;
+	}
+}
+
+.data {
+    width: 30%;
+
+	&__form {
+
+		&_info {
+            position: relative;
+            width: 100%;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+		}
+
+		&_info-label {
+            margin-bottom: 5px;
+
+            font-family: Open Sans;
+            font-size: 16px;
+		}
+
+		&_info-input {
+            display: block;
+            height: 30px;
+
+            border: solid 1px #000;
+            border-radius: 10px;
+
+            font-family: Open Sans;
+            font-size: 14px;
+            text-indent: 10px;
+            padding-right: 80px;
+		}
+
+        &_info-edit {
+            position: absolute;
+            top: 31px;
+            right: 10px;
+
+            font-family: Open Sans;
+            font-size: 12px;
+            font-weight: normal;
+            text-decoration: underline;
+
+            cursor: pointer;
+        }
+    }
+}
+
+.history {
+    width: 55%;
+
+	&__info {
+        margin-bottom: 40px;
+
+        display: flex;
+        justify-content: space-between;
+
+		&_list {
+            width: 45%;
+		}
+
+		&_list-text {
+            font-family: Open Sans;
+            font-size: 16px;
+            line-height: 22px;
+		}
+	}
+}

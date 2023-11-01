@@ -1,0 +1,132 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #121212;
+  color: #fff;
+  font-family: Open Sans;
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.animal {
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.animal__header {
+  width: 20%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.animal__header_img {
+  width: 30%;
+  margin-right: 10px;
+}
+
+.animal__header_title {
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.animal__sub-title {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.animal__main-text {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.animal__body {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.body__info {
+  width: 45%;
+}
+
+.body__info_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 15px 0;
+}
+
+.body__info_icon {
+  margin-right: 10px;
+  padding: 5px 10px;
+  border: solid 1px #fff;
+  border-radius: 100%;
+}
+
+.body__image-one {
+  width: 50%;
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.body__image-one_img {
+  width: 90%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+
+.body__image-two {
+  width: 50%;
+  margin-top: 30px;
+}
+
+.body__image-two_img {
+  width: 100%;
+  height: 120px;
+}

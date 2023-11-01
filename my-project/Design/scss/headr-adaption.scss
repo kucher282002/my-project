@@ -1,0 +1,228 @@
+@media only screen and (min-width : 780px) {
+    section {
+        opacity: 1;
+
+        transition: all 0.3s ease;
+    }
+    
+    .menu {
+        &__list > li {
+            padding: 10px 0;
+        }
+
+        &__topmenu:before {
+            opacity: 0;
+            visibility: hidden;
+            transform: translate(-50%, 70px);
+        }
+
+        &__sud-list {
+            opacity: 0;
+            visibility: hidden;
+            transform: translate(-50%, 40px);
+            pointer-events: none; //запрещает взаимодействие с мышкой
+            transition: all 0.3s ease;
+        }
+    }
+}
+
+@media only screen and (max-width : 1280px) {
+    .header {
+    
+        &__menu {
+            width: 75%;
+        }
+    }
+
+    .heder {
+        &__container {
+            width: 80%;
+            height: 80px;
+        }
+    }
+}
+
+@media only screen and (max-width : 780px) {
+    
+    .logo {
+        width: 100%;
+        display: flex;
+
+        &__href {
+           
+            cursor: pointer;
+        }
+    
+        &__img {
+            width: 70%;
+            margin-right: 6%;
+        }
+    
+        &__text {
+            width: 50%;
+            font-family: Times New Roman;
+            font-style: normal;
+            &_size {
+                &_n {
+                    font-size: 40px;
+                }
+                &_m {
+                    font-size: 60px;
+                }
+            }
+        }
+    
+        &_size_m {
+            width: 40%;
+        }
+    }
+    
+    .heder {
+        &__container {
+            width: 85%;
+        }
+    }
+
+    .header {
+    
+        &__menu {
+            width: 10%;
+        }
+    }
+    
+    .menu {
+
+        &__icon {
+            width: 25px;
+            height: 25px;
+
+            display: block;
+            z-index: 5;
+
+            position: relative;
+            cursor: pointer;
+        }
+
+        &__icon span,
+        &__icon::before,
+        &__icon::after {
+            width: 100%;
+            height: 10%;
+
+            left: 0;
+            position: absolute;
+            background-color: #000;
+
+            transition: all 0.3s ease;
+        }
+    
+        &__icon::before,
+        &__icon::after { 
+            content: "";
+        }
+
+        &__icon::before { //первая линия
+            top: 0;
+        }
+
+        &__icon::after { //третия линия
+            bottom: 0;
+        }
+
+        &__icon span { //вторая линия
+            top: 50%;
+            transform: scale(1) translate(0px, -50%);
+        }
+
+        &__icon._active span {
+            transform: scale(0) translate(0px, -50%);
+        }
+
+        &__icon._active::before {
+            top: 50%;
+            transform: rotate(-45deg) translate(0px, -50%);
+        }
+
+        &__icon._active::after {
+            bottom: 50%;
+            transform: rotate(45deg) translate(0px, 50%);
+        }
+
+        &__body {
+            width: 100%;
+            height: 100%;
+            padding: 100px 30px 30px 30px;
+
+            overflow: auto;
+            position: fixed;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            background-color: rgb(255, 255, 255);
+
+            transition: opacity 0.3s ease 0s;
+
+            display: flex;
+            align-items: center;
+        }
+
+        &__body._active {
+            opacity: 1;
+        }
+
+        &__body::before {
+            width: 100%;
+            height: 80px;
+            
+            top: 0;
+            left: 0;
+
+            background-color: rgb(255, 255, 255);
+            z-index: 2;
+        }
+    
+        &__list {
+            flex-direction: column;
+            margin: auto;
+        }
+    
+        &__list > li {
+            flex-wrap: wrap;
+            margin: 0px 0px 30px 0px;
+        }
+
+        &__list li._active .menu__sud-list {
+            display: block;
+            text-align: center;
+        }
+
+        &__list li._active {
+            flex-direction: column;
+        }
+    
+        &__link {
+            font-size: 22px;
+        }
+    
+        &__topmenu {
+            position: relative;
+        }
+    
+        &__sud-list {
+            width: 350px;
+            position: relative;
+            flex-direction: column;
+            margin-top: 10px;
+            display: none;
+        }
+    
+        &__button {
+            width: 120px;
+            height: 60px;
+        }
+
+        &__sud-link {
+            font-size: 18px;
+        }
+    }
+}

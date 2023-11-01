@@ -1,0 +1,339 @@
+@import './style';
+@import './fonts';
+@import './normalize';
+
+body {
+    width: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+.unification {
+    width: 100%;
+    color: #000;
+	
+	display: none;	
+	content: '';
+	position: fixed;
+
+	align-items: center;
+	justify-content: center;
+
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(15, 15, 15, 0.8);
+
+    z-index: 9;
+
+    &__close {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__position-widht {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+
+        z-index: 8;
+    }
+
+    &__position-login,
+    &__position-register,
+    &__position-restore {
+        flex-direction: column;
+        margin: auto;
+        position: absolute;
+        width: 400px;
+        height: 100%;
+        left: 0;
+        right: 0;
+        
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 16);
+        background-color: #fff;
+        z-index: 7;
+    }
+
+    &__position-login {
+        display: flex;
+    }
+
+    &__position-register,
+    &__position-restore {
+        display: none;
+    }
+
+    &__form {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+
+        height: 550px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &_block {
+            width: 100%;
+            margin: auto;
+        }
+
+        &_block-title {
+            margin-bottom: 10%;
+            text-align: center;
+
+            font-family: Open Sans;
+            cursor: default;
+        }
+
+        &_block-info {
+            margin: auto;
+            margin-bottom: 10%;
+            width: 80%;
+        }
+
+        &_block-input {
+            margin: auto;
+            margin-bottom: 3%;
+            width: 100%;
+            height: 25px;
+
+            border: unset;
+            outline: none;
+            border-bottom: 1px solid #000;
+            background-color: unset;
+
+            font-family: Open Sans;
+            font-size: 15px;
+            font-weight: normal;
+        }
+
+        &_block-help {
+            font-family: Open Sans;
+            font-size: 12px;
+            font-weight: normal;
+            text-align: right;
+            text-decoration: underline;
+
+            transition: color 0.5s ease;
+        }
+
+        &_block-help:hover {
+            color: #7b68ee;
+        }
+    }
+
+    &__login {
+        text-align: center;
+        
+
+        &_button {
+            width: 80%;
+            height: 40px;
+            margin-bottom: 10%;
+            border-radius: 50px;
+            outline: none;
+            background-color: #fff;
+            cursor: pointer;
+            color: #000;
+            border: 1px solid #000;
+    
+            font-family: Open Sans;
+            font-size: 14px;
+            
+            transition: all 0.6s ease;
+        }
+    
+        &_button:hover {
+            color: #fff;
+            background-color: #000;
+        }
+    }
+
+    &__social {
+        width: 45%;
+        margin: auto;
+
+        &_text {
+            margin-bottom: 10px;
+            font-family: Open Sans;
+            font-size: 13px;
+            font-weight: normal;
+            cursor: default;
+
+            text-align: center;
+        }
+
+        &_icons {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        &_icons-widht {
+            width: 25%;
+        }
+    }
+
+    &__account {
+        margin-top: auto;
+        margin-bottom: 10%;
+
+        &_question {
+            font-family: Open Sans;
+            font-size: 14px;
+            font-weight: normal;
+            cursor: default;
+            text-align: center;
+        }
+
+        &_response-login,
+        &_response-restore,
+        &_response-register {
+            margin-top: 10px;
+            font-family: Open Sans;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            text-align: center;
+        }
+    }
+}
+
+
+
+//-------------------------------------------------------------------------------------
+.kontact {
+    text-align: center;
+}
+
+.kontact > ul {
+    list-style: none;
+}
+
+.kontact a {
+    display: block;
+    color: #000;
+}
+
+.topmenu > li {
+    display: inline-block;
+    position: relative;
+}
+
+.topmenu > li > a {
+    position: relative;
+}
+
+.topmenu > li > a:before {
+    content: "";
+    position: absolute;
+    z-index: 5;
+    left: 50%;
+    top: 100%;
+    width: 10px;
+    height: 10px;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;
+    transform: translate(-50%, 30px);
+    opacity: 0;
+    transition: .3s;
+}
+
+.topmenu li:hover a:before {
+    transform: translate(-50%, 0);
+    opacity: 1;
+}
+
+.submenu {
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+    top: 100%;
+    width: 150px;
+    padding: 15px 0 15px;
+    margin-top: 5px;
+    background: #fff;
+    color: #000;
+    border-radius: 5px;
+    box-shadow: 0 0 30px rgb(112, 112, 112);
+    box-sizing: border-box;
+    visibility: hidden;
+    opacity: 0;
+    transform: translate(-50%, 20px);
+    transition: .3s;
+}
+
+.topmenu > li:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%, 0);
+}
+
+.submenu li {
+    letter-spacing: 1px;
+    padding: 5px 10px;
+    transition: .2s linear;
+}
+
+.submenu li:hover {
+    background: rgb(227, 227, 227);
+}
+
+.name3 {
+    padding: 10px;
+    margin: auto;
+
+    background-color: Transparent;
+    background-repeat:no-repeat;
+
+    border-radius: 120px;
+    color: var(--open-form);
+    border: 1px solid #fff;
+
+    outline: none;
+
+    transition: 1s ease;
+}
+
+.menuButton {
+    font-family: Open sans;
+    font-weight: normal;
+    font-size: 13px;
+
+    color: rgb(0, 0, 0);
+    border: 1px solid #fff;
+
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+    background-color: Transparent;
+    background-repeat:no-repeat;
+}
+
+.support-text {
+    font-family: Open sans;
+    font-weight: normal;
+    font-size: 13px;
+}
+
+.support-text-1 {
+    font-family: Open sans;
+    font-weight: normal;
+    font-size: 13px;
+
+    cursor: default;
+}
+
+.user {
+    &__name {
+        color: #fff;
+    }
+}

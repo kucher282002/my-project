@@ -1,0 +1,270 @@
+@import "normalize";
+
+.header {
+  
+    &__logo {
+        display: flex;
+        align-items: center;
+        width: 10%;
+
+        z-index: 5;
+    }
+
+    &__menu {
+        width: 50%;
+    }
+}
+
+.heder {
+    &__container {
+        margin: auto;
+        width: 80%;
+        height: 80px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.logo {
+
+    &__href {
+        display: flex;
+        cursor: pointer;
+    }
+
+    &__img {
+        width: 40%;
+        margin-right: 6%;
+    }
+
+    &__text {
+        font-family: Times New Roman;
+        font-style: normal;
+        &_size {
+            &_n {
+                font-size: 40px;
+            }
+            &_m {
+                font-size: 60px;
+            }
+        }
+    }
+
+    &_size_m {
+        width: 40%;
+    }
+}
+
+.menu {
+
+    &__icon {
+        display: none;
+    }
+
+    &__body {
+       
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: auto;
+        text-align: right;
+    }
+
+    &__list > li {
+       position: relative;
+    }
+
+    &__link {
+        font-family: Ubuntu;
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 24px;
+
+        transition: color 0.5s ease;
+    }
+
+    &__link:hover {
+        color: #7b68ee;
+    }
+
+    &__button {
+        width: 80px;
+        height: 40px;
+
+        background-color: #000;
+        color: #fff;
+
+        border: none;
+        cursor: pointer;
+        border-radius: 100px;
+
+        transition: all 1s ease;
+    }
+
+    &__button:hover {
+        border: 1px solid #000;
+
+        background-color: #fff;
+        color: #000;
+    }
+
+    &__topmenu {
+        position: relative;
+    }
+
+    &__topmenu:before {
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        
+        content: "";
+        left: 50%;
+        top: 100%;
+        z-index: 1;
+        
+        border-radius: 50%;
+        background: rgb(255, 255, 255);
+        transform: translate(-50%, 10px);
+       
+        transition: .3s;
+    }
+
+    &__sud-list {
+        position: absolute;
+        width: 300px;
+        padding: 15px;
+            
+        top: 100%;
+        left: 50%;
+        
+        border-radius: 5px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0 0 30px rgb(150, 150, 150);
+    }
+
+    &__sud-list li {
+       margin: 0px 0px 10px 0px;
+       text-align: center;
+    }
+
+    &__sud-link {
+        
+    }
+}
+
+
+.list {
+    &__text-cursor {
+        color: unset;
+        cursor: default;
+    }
+
+    &__text-cursor:hover {
+        color: unset;
+    }
+}
+
+.list-adm {
+    width: 25%;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 80%;
+    height: 150px;
+    
+    // лого + копирайт
+    // &__desc { }
+    // блок контакты
+    // &__contacts { }
+
+    &__section-title {
+        font-family: Ubuntu;
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    &__navigation {
+        width: 20%;
+    }
+
+    &__socual {
+        display: flex;
+        justify-content: space-between;
+        width: 15%;
+    }
+
+    &__icon {
+        width: 70%;
+    }
+}
+
+.navigation__list {
+    height: auto;
+    list-style-position: inside;
+    column-count: 2;
+}
+
+/*------------------------------*/
+
+body._block {
+    overflow: hidden;
+}
+
+body._block > main > section { 
+    display: none;
+
+    transition: all 0.3s ease;
+}
+
+body._block > footer {
+    display: none;
+}
+
+body._pс .menu__list > li:hover .menu__sud-list {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, 0px);
+    pointer-events: all;
+}
+
+body._pс .menu__list > li:hover a:before {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, 10px);
+    pointer-events: all;
+}
+
+body._phone .menu__list > li {
+    display: flex;
+    align-items: center;
+}
+
+body._phone .menu__arrow {
+    display: block;  
+}
+
+body._phone .menu__list > li._active .menu__sud-list  {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, 0px);
+    pointer-events: all;
+}
+
+body._phone .menu__list > li._active a:before{
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, 5px);
+    pointer-events: all;
+}
+
+/*------------------------------*/

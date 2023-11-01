@@ -1,0 +1,64 @@
+@media only screen and (max-width : 1280px) {
+    .portfolio {
+    
+        &__AllProjects {
+            width: 100%;
+    
+            &_projects {
+                width: 50%;
+            }
+    
+            &_projects-img {                
+                opacity: 0.4;
+            }
+    
+            &_projects-info {
+                width: 50%;
+            }
+    
+            &_projects-text {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width : 700px) {
+    .portfolio {
+    
+        &__AllProjects {
+            width: 100%;
+    
+            &_projects {
+                width: 100%;
+            }
+    
+            &_projects-info {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width : 360px) {
+    .portfolio {
+    
+        &__AllProjects {
+            width: 100%;
+    
+            &_projects {
+                width: 100%;
+                height: 300px;
+            }
+    
+            &_projects-info {
+                width: 100%;
+            }
+
+            &_projects-img {
+                width: 100%;              
+                height: 300px;
+            }
+        }
+    }
+}

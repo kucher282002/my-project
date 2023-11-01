@@ -1,0 +1,88 @@
+.portfolio {
+    width: 100%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+    &__description {
+        width: 100%;
+        margin: auto;
+
+        &_title {
+            margin-bottom: 40px;
+            font-family: Open Sans;
+            font-weight: bold;
+            font-size: 35px;
+
+            text-align: center;
+        }
+
+        &_text {
+            margin-bottom: 50px;
+
+            font-family: Open Sans;
+            font-size: 14px;
+
+            text-align: center;
+        }
+    }
+
+    &__AllProjects {
+        width: 100%;
+        margin: auto;
+        position: relative;
+        display: inline-block;
+
+        display: flex;
+        flex-wrap: wrap;
+
+        &_projects {
+            width: 33.33%;
+            height: 400px; 
+            background-color: #000;
+            display: flex;
+            align-items: center;
+
+            transition: all 0.8s ease;
+        }
+
+        &_projects:hover &_projects-img {
+           	opacity: 0.4;
+        }
+
+        &_projects-img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;  
+            transition: all 0.8s ease;
+        }
+
+        &_projects-info {
+            width: 33%;
+            position: absolute;
+
+            text-align: center;
+        }
+
+        &_projects-text {
+            text-align: center;
+            margin: 0 auto;
+            opacity: 0;
+
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 30px;
+            color: #fff;
+
+            cursor: pointer;
+            transition: all 0.8s ease;
+        }
+
+        &_projects:hover &_projects-text {
+            opacity: 1;
+        }
+    }
+}
+

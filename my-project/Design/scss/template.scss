@@ -1,0 +1,54 @@
+.project {
+    width: 100%;
+    margin: auto;
+
+    margin-top: 80px;
+}
+
+.info {
+    width: 80%;
+    margin: auto;
+
+	&__name {
+        margin-bottom: 10px;
+
+        font-family: Open Sans;
+        font-size: 18px;
+        font-weight: bold;
+	}
+
+	&__detail {
+
+		&_text {
+            font-family: Open Sans;
+            font-size: 18px;
+            font-weight: normal;
+            line-height: 25px;
+		}
+	}
+}
+
+// первый шаблон
+
+.template-one {
+    margin-top: 50px;
+
+	&__img {
+        width: 100%;
+	}
+}
+
+// второй шаблон
+
+.template-two {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+
+	&__img2 {
+        width: 10%;
+	}
+}

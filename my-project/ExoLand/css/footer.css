@@ -1,0 +1,71 @@
+.line {
+  width: 85%;
+  height: 1px;
+  background-color: #fff;
+  border-radius: 100px;
+  margin: auto;
+  margin-top: 80px;
+}
+
+.footer {
+  width: 70%;
+  margin: 30px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__logo {
+  width: 25%;
+  font-size: 38px;
+  font-weight: 700;
+  margin: auto 0;
+  letter-spacing: 5px;
+}
+
+.footer__contact {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__contact_tel {
+  width: 50%;
+  margin: auto;
+}
+
+.footer__contact_title {
+  margin-bottom: 10px;
+}
+
+.footer__contact_email {
+  width: 50%;
+  margin: 35px auto;
+}
+
+.footer__social {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto 0;
+}
+
+.footer__social_pont {
+  margin: 0 10px;
+}
+
+.footer__social_pont-a {
+  width: 60px;
+}
+
+.footer__social_pont-img {
+  width: 60px;
+}

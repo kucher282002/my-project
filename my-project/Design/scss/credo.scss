@@ -1,0 +1,52 @@
+.credo {
+    width: 60%;
+    margin: auto;
+    margin-top: 50px;
+
+    &__description {
+        width: 100%;
+        margin: auto;
+
+        &_title {
+            margin-bottom: 40px;
+            font-family: Open Sans;
+            font-weight: bold;
+            font-size: 35px;
+
+            text-align: center;
+        }
+
+        &_text {
+            margin-bottom: 80px;
+
+            font-family: Open Sans;
+            font-size: 14px;
+
+            text-align: center;
+        }
+    }
+
+    &__info {
+        display: flex;
+        margin-bottom: 80px;
+
+        &_titile {
+            margin-bottom: 10px;
+            font-family: Open Sans;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        &_main-text {
+            font-family: Open Sans;
+            font-size: 14px;
+            line-height: 18px;
+        }
+    }
+
+    &__info-icon {
+        width: 2%;
+        margin-right: 10px;
+        margin-bottom: auto;
+    }
+}

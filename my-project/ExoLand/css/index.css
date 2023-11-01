@@ -1,0 +1,362 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #121212;
+  color: #fff;
+  font-family: Open Sans;
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.header {
+  position: absolute;
+}
+
+.welcome {
+  width: 100%;
+  height: 750px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), color-stop(rgba(0, 0, 0, 0.5)), to(#131313)), url(../images/index_animal/back.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), #131313), url(../images/index_animal/back.jpg);
+  background-size: cover;
+  background-position: center center;
+  -webkit-box-shadow: 0 10px 20px 20px #121212 inset;
+          box-shadow: 0 10px 20px 20px #121212 inset;
+  z-index: -1;
+}
+
+.welcome__block {
+  width: 100%;
+  margin: 250px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.welcome__block_title {
+  width: 45%;
+  margin: auto;
+  text-align: center;
+  font-size: 38px;
+  font-weight: 900;
+}
+
+.welcome__block_button-block {
+  width: 32%;
+  margin: auto;
+  margin-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.button-block_button {
+  width: 180px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto 0;
+  border: #fff solid 1px;
+  border-radius: 100px;
+  border-color: #fff;
+  background: rgba(255, 255, 255, 0);
+  outline: none;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.button-block_button_text {
+  margin: auto;
+  cursor: pointer;
+}
+
+.button-block_line {
+  width: 2px;
+  height: 140px;
+  background-color: #fff;
+  border-radius: 100px;
+}
+
+.button-block_slogan {
+  width: 40%;
+  height: 40px;
+  margin: auto 0;
+  padding-bottom: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.info {
+  width: 80%;
+  margin: 200px auto;
+}
+
+.info__name {
+  font-size: 38px;
+  font-weight: 700;
+  margin: 15px 0;
+}
+
+.info__text {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.info__block2 {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.info__block-left {
+  width: 48%;
+}
+
+.info__block-line {
+  width: 2px;
+  height: 300px;
+  background-color: #fff;
+  border-radius: 100px;
+}
+
+.info__block-right {
+  width: 48%;
+}
+
+.info__spisok {
+  width: 90%;
+  margin: auto;
+}
+
+.info__point {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.info__point-image {
+  width: 80px;
+  margin-right: 30px;
+}
+
+.info__point-text {
+  font-size: 14px;
+  font-weight: 400;
+  margin-right: auto;
+}
+
+.animal {
+  width: 100%;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.animal__name {
+  margin-bottom: 40px;
+  font-weight: bold;
+  font-size: 35px;
+  text-align: center;
+}
+
+.animal__block {
+  width: 80%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.animal__block_link {
+  width: 32%;
+  height: 250px;
+  background-color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+
+.animal__block_link:hover .animal__block_link-element-img {
+  opacity: 0.6;
+}
+
+.animal__block_link-element {
+  width: 100%;
+  height: 250px;
+  border-radius: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+  z-index: 1;
+}
+
+.animal__block_link-element-img {
+  width: 100%;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+  position: absolute;
+  border-radius: 20px;
+}
+
+.animal__block_link-element-info {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  color: #fff;
+  margin: auto;
+  z-index: 2;
+  opacity: 0;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
+  cursor: pointer;
+}
+
+.animal__block_link-element-name {
+  margin-bottom: auto;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.animal__block_link-element-text {
+  margin-top: auto;
+  font-weight: lighter;
+  font-size: 16px;
+}
+
+.animal__block_link:hover .animal__block_link-element-info {
+  opacity: 1;
+}
+
+.news {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 80px;
+  margin-top: 180px;
+}
+
+.news__title {
+  margin: 60px auto;
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.news__list {
+  width: 92%;
+  margin: auto;
+  bottom: 40px;
+}
+
+.news__div {
+  width: 100%;
+  margin: auto;
+}
+
+.news_link {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.news_link-element {
+  width: 90%;
+  height: 270px;
+  margin: auto;
+}
+
+.news_link-element-img {
+  width: 100%;
+  height: 200px;
+  border-radius: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+  cursor: pointer;
+}
+
+.news_link-element-info {
+  color: #fff;
+  cursor: pointer;
+}
+
+.news_link-element-name {
+  margin: 10px 0;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.news_link-element-text {
+  width: 360px;
+  font-size: 16px;
+  font-weight: lighter;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+
+.anchor {
+  cursor: default;
+}

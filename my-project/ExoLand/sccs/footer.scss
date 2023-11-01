@@ -1,0 +1,60 @@
+.line {
+    width: 85%;
+    height: 1px;
+    background-color: #fff;
+    border-radius: 100px;
+    margin: auto;
+}
+
+.footer {
+    width: 70%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+
+    &__logo {
+        width: 25%;
+        font-size: 38px;
+        font-weight: 700;
+
+        margin: auto 0;
+
+        letter-spacing: 5px;
+    }
+
+	&__contact {
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+
+		&_tel {
+            width: 50%;
+            margin: auto;
+		}
+		&_title {
+            margin-bottom: 10px;
+		}
+		&_phone {
+
+		}
+		&_email {
+            width: 50%;
+            margin: 35px auto;
+		}
+	}
+
+	&__social {
+        width: 25%;
+        display: flex;
+        margin: auto 0;
+		&_pont {
+            margin: 0 10px;
+		}
+		&_pont-a {
+            width: 60px;
+		}
+		&_pont-img {
+            width: 60px;
+		}
+	}
+}
